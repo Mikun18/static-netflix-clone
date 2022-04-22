@@ -1,13 +1,433 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: black;
+    color: white;
+}
+
+.main-header{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../public/Images/logo.jpg);
+    background-blend-mode: darken;
+    /* background-repeat: no-repeat; */
+    padding-bottom: 10%;
+    border-bottom: 8px #222 solid;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.header h1{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 18px; 
+    border-radius: 0.5rem;
+}
+
+.showcase{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.showcase h2{
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1%;
+}
+
+.showcase h4{
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+.form{
+    padding: 1%;
+}
+
+.form label{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.form input{
+    width: 38%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form button{
+    border: none;
+    color: white;
+    padding: 0px 35px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: red;
+    font-size: xx-large;
+}
+
+.first-sec{
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    border-bottom: 8px #222 solid;
+}
+
+.sub-first{
+    margin-top: 13%;
+    font-size: 30px;
+    width: 450px;
+}
+
+.second-sec{
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    border-bottom: 8px #222 solid;
+}
+
+.sub-second{
+    margin-top: 13%;
+    font-size: 30px;
+    width: 450px;
+    padding-right: 100px;
+}
+
+.third-sec{
+    padding: 100px;
+    font-size: 30px;
+    border-bottom: 8px #222 solid;
+}
+
+.fourth-sec{
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    border-bottom: 8px #222 solid;
+}
+
+.sub-fourth{
+    margin-top: 13%;
+    font-size: 30px;
+    width: 450px;
+    padding-right: 100px;
+}
+
+.faq{
+    padding: 5%;
+    margin-left: 20%;
+}
+
+.faq h1{
+    padding: 5%;
+    margin-left: -2%;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.question{
+    background-color: #303030;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 25%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.question p{
+    border-top: 1px black solid;
+    padding: 2%;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.faq-btn{
+    border: none;
+    font-size: 50px;
+    font-weight: lighter;
+    background-color: #303030;
+    color: white;
+}
+
+.sub{
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.faq-input{
+    text-align: center;
+    padding-bottom: 5%;
+    border-bottom:  8px #222 solid;
+}
+
+.login-main-header{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../public/Images/logo.jpg);
+    background-blend-mode: darken;
+    /* background-repeat: no-repeat; */
+    padding-bottom: 10%;
+    border-bottom: 8px #222 solid;
+}
+
+.login-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.login-header h1{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.container{
+    margin-left: 35%;
+    margin-right: 34%;
+    padding-bottom: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.container h2{
+    margin-left: 10%;
+    padding: 2%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.login-form{
+    padding: 5% 5%;
+}
+
+.single-form{
+    padding: 2%;
+}
+
+.login-form input{
+    width: 80%;
+    margin-left: 25px;
+    padding: 12px;
+    background-color: #303030;
+    color: white;
+    border: none;
+    border-bottom: 2px coral solid;
+    border-radius: 0.5rem;
+}
+
+.login-form input:focus{
+    outline: none;
+}
+
+.login-form p{
+    font-size: small;
+    color: coral;
+    margin-left: 8%;
+}
+
+.login-btn{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 132px;
+    margin-top: 3%;
+    margin-left: 10%;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.help{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 26px;
+    color: darkgray;
+}
+
+.con-footer{
+    padding: 20px;
+    color: darkgray;
+}
+
+.con-footer p{
+    padding: 8px;
+}
+
+.facebook{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.sign{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.sign:hover{
+    text-decoration: underline;
+}
+
+.learn{
+    text-decoration: none;
+}
+
+.learn:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1248px){
+    .first-sec img{
+        width: 400px;
+    }
+
+    .sub-first{
+        margin-top: 8%;
+    }
+    .second-sec img{
+        width: 400px;
+    }
+
+    .sub-second{
+        margin-top: 8%;
+    }
+    .fourth-sec img{
+        width: 400px;
+    }
+
+    .sub-fourth{
+        margin-top: 8%;
+    }
+
+    .faq h1{
+        font-size: 35px;
+        margin-left: 2%;
+    }
+
+    .question{
+        padding: 10px 20px;
+        margin-right: 14%;
+    }
+
+    .faq-input{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1108px){
+    .faq h1{
+        margin-left: 1%;
+    }
+
+    .question{
+        margin-right: 12%;
+    }
+
+    .form input{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .form button{
+        display: block;
+        margin-top: 3%;
+        margin-left: 37%;
+        padding: 15px 24px;
+
+    }
+
+    .form input{
+        width: 75%;
+        padding: 13px;
+    }
+
+    .form label{
+        font-size: larger;
+    }
+
+    .first-sec{
+        display: block;
+    }
+    .first-sec img{
+        margin-left: 18%;
+    }
+    
+    .sub-first{
+        width: 630px;
+    }
+    
+    .sub-first h2{
+        margin-left: 25%;
+        padding: 1%;
+    }
+
+    .sub-first h5{
+        font-size: 20px;
+        text-align: center;
+        width: ;
+    }
+    .second-sec{
+        display: block;
+        transform: rotate(180deg);
+        border: none;
+        border-top: 8px #222 solid;
+    }
+    .second-sec img{
+        /* transform: rotate(180deg); */
+        margin-left: 18%;
+        width: 65%;
+    }
+    
+    .sub-second{
+        /* transform: rotate(180deg); */
+        width: 630px;
+        
+    }
+    
+    .sub-second h2{
+        margin-top: 5%;
+        text-align: center;
+        padding: 1%;
+        width: max-content;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sub-second h5{
+        font-size: 20px;
+        text-align: center;
+        width: ;
+    }
+
+    .faq{
+        margin-left: 10%;
+    }
+
+    .faq-input{
+        margin-left: 2%;
+    }
 }
