@@ -299,6 +299,195 @@ body{
     text-decoration: underline;
 }
 
+.who{
+    margin-top: 8%;
+    margin-left: 35%;
+}
+
+.who h1{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+}
+.who button{
+    border: none;
+    background-color: black;
+    margin-top: 3%;
+    margin-left: 15%;
+    padding: 5px 40px;
+    color: darkgray;
+    font-size: larger;
+    border: 1px darkgray solid;
+}
+
+.who button:hover{
+    color: gray;
+    border: 1px gray solid;
+}
+
+.add-profile{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #141414;
+}
+
+.add-name{
+    margin-top: 5%;
+    margin-left: 30%;
+
+}
+
+.add-name h1{
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    padding: 2%;
+}
+
+.add-name p{
+    color: #666;
+    letter-spacing: 0.1em;
+    margin-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sub-form{
+    padding: 20px 0px;
+    border-top: 1px #666 solid;
+    border-bottom: 1px #666 solid;
+    margin-right: 50%;
+    margin-top: 3%;
+    align-items: center;
+    display: flex;
+}
+
+.sub-form input{
+    width: 60%;
+    padding: 8px;
+    background-color: darkgray;
+    font-size: larger;
+    color: white;
+    border: none;
+}
+
+.sub-form img{
+    width: 100px;
+    padding: 2%;
+}
+
+.sub-form input:focus{
+    outline: none;
+}
+
+.btn-ctn{
+    margin-top: 3%;
+    border: none;
+    padding:  10px 25px;
+    background-color: white;
+    font-size: large;
+    letter-spacing: 0.1em;
+}
+
+.btn-clear{
+    margin-top: 3%;
+    margin-left: 20px;
+    border: none;
+    padding:  10px 25px;
+    background-color: #141414;
+    color: white;
+    border: 1px gray solid;
+    font-size: large;
+    letter-spacing: 0.1em;
+}
+
+.indi{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 18%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.person{
+    padding: 35px 15px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: blue;
+    border-radius: 0.5rem;
+    margin-right: 5%;
+}
+
+
+/* .account{
+   
+}
+
+.act-con{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.act-con h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    letter-spacing: 0.1em;
+}
+
+.makin:hover{
+    border: 4px white solid;
+}
+
+.mide{
+    padding: 35px 15px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: yellow;
+    border-radius: 0.5rem;
+    margin-right: 5%;
+}
+
+.mide:hover{
+    border: 4px white solid;
+}
+
+.posi{
+    padding: 35px 15px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border-radius: 0.5rem;
+    margin-right: 5%;
+}
+
+.posi:hover{
+    border: 4px white solid;
+}
+
+.mikun{
+    padding: 35px 15px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 0.5rem;
+    margin-right: 5%;
+}
+
+.mikun:hover{
+    border: 4px white solid;
+} */
+
+
 @media only screen and (max-width:1248px){
     .first-sec img{
         width: 400px;
@@ -388,7 +577,6 @@ body{
     .sub-first h5{
         font-size: 20px;
         text-align: center;
-        width: ;
     }
     .second-sec{
         display: block;
@@ -420,7 +608,6 @@ body{
     .sub-second h5{
         font-size: 20px;
         text-align: center;
-        width: ;
     }
 
     .faq{

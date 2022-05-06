@@ -16,7 +16,7 @@ const Login = ({ setUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(value.email =='' || value.password == ''){
+    if(value.email ==='' && value.password === ''){
       return (
         setAlert({email:true, password:true})
       )
