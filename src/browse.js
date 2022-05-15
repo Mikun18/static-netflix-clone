@@ -12,7 +12,7 @@ const Browse = () => {
     <div className='account'>
         {add && <Add setAdd={setAdd} people={people} setPeople={setPeople}/>}
       <section className='header'>
-            <h1>NETFLIX</h1>
+          <Link to='/' className='logo'>NETFLIX</Link>
         </section>
 
         <div className='who'>

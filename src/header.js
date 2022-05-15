@@ -7,7 +7,8 @@ const Header = () => {
   return (
     <div className='main-header'>
         <section className='header'>
-            <h1>NETFLIX</h1>
+            {/* <h1>NETFLIX</h1> */}
+            <Link to='/' className='logo'>NETFLIX</Link>
             <Link to='login' className='link'>Sign in</Link>
         </section>
 

@@ -22,10 +22,12 @@ body{
     padding: 2%;
 }
 
-.header h1{
+.logo{
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .link{
@@ -250,14 +252,14 @@ body{
 .login-btn{
     border: none;
     border-radius: 0.5rem;
-    padding: 10px 132px;
+    padding: 10px 122px;
     margin-top: 3%;
-    margin-left: 10%;
+    margin-left: 9%;
     background-color: red;
     color: white;
     font-size: medium;
     font-weight: bold;
-
+    cursor: pointer;
 }
 
 .help{
@@ -404,7 +406,8 @@ body{
 }
 
 .indi{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
     align-items: center;
     margin-left: 18%;

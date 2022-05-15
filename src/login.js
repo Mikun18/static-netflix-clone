@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Login = ({ setUser }) => {
   const navigate = useNavigate()
@@ -28,7 +29,7 @@ const Login = ({ setUser }) => {
   return (
     <section className='login-main-header'>
         <div className='login-header'>
-            <h1>NETFLIX</h1>
+            <Link to='/' className='logo'>Netflix</Link>
         </div>
 
         <div className='container'>

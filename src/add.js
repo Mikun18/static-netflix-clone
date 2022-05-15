@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './index.css'
+import { Link } from 'react-router-dom'
 
 const Add = ({ setAdd, people, setPeople }) => {
     const [name, setName] = useState('');
@@ -21,7 +22,7 @@ const Add = ({ setAdd, people, setPeople }) => {
   return (
     <div className='add-profile'>
         <section className='header'>
-            <h1>NETFLIX</h1>
+             <Link to='/' className='logo'>NETFLIX</Link>
         </section>
 
         <article className='add-name'>
