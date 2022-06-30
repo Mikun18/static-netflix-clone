@@ -1,0 +1,234 @@
+@media only screen and (max-width:1248px){
+    .faq{
+        margin: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 1108px){
+    .faq{
+        margin: 0 15%;
+    }
+
+    .form input{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .form button{
+        display: block;
+        margin-top: 3%;
+        margin-left: 37%;
+        padding: 15px 24px;
+    }
+
+    .form input{
+        width: 75%;
+        padding: 13px;
+    }
+
+    .form label{
+        font-size: larger;
+    }
+
+    .sub-first{
+        width: 50%;
+    }
+
+    .sub-second{
+        width: 80%;
+    }
+
+    .faq{
+        margin: 0 10%;
+    }
+
+    .faq-input{
+        margin-left: 2%;
+    }
+}
+
+@media(max-width: 770px){
+    .showcase h2{
+        font-size: 40px;
+    }
+
+    .showcase h4{
+        font-size: 17px;
+    }
+
+    .first-sec{
+        flex-direction: column;
+    }
+
+    .sub-first{
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        font-size: 25px;
+    }
+
+    .sub-first h2{
+        padding: 1% 0;
+    }
+
+    .first-sec img{
+        width: 80%;
+    }
+
+    .second-sec{
+        flex-direction: column;
+    }
+
+    .sub-second{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 5%;
+        max-width: none;
+    }
+
+    .sub-second h2{
+        padding: 1% 0;
+    }
+
+    .second-sec img{
+        width: 80%;
+    }
+    .fourth-sec{
+        flex-direction: column;
+    }
+
+    .sub-fourth{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 5%;
+        max-width: none;
+    }
+
+    .sub-fourth h2{
+        padding: 1% 0;
+    }
+
+    .fourth-sec img{
+        width: 80%;
+    }
+
+
+    .faq-header{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 640px){
+    .showcase h2{
+        font-size: 30px;
+    }
+
+    .showcase h4{
+        font-size: 13px;
+    }
+
+    .form label{
+        font-size: 14px;
+    }
+
+    .form input{
+        padding: 10px;
+    }
+
+    .form button{
+        margin-left: 30%;
+        padding: 15px 35px;
+    }
+
+    .sub-first{
+        font-size: 23px;
+    }
+
+    .sub-second{
+        font-size: 22px;
+    }
+
+    .sub-second h5{
+        font-size: 16px;
+    }
+
+    .third-sec{
+        text-align: center;
+        width: 100%;
+        padding: 10% 0%;
+        font-size: 23px;
+    }
+
+    .sub-fourth{
+        font-size: 22px;
+    }
+
+    .sub-fourth h5{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 415px){
+    .showcase h2{
+        font-size: 20px;
+    }
+
+    .showcase h4{
+        font-size: 11px;
+    }
+
+    .form label{
+        font-size: 14px;
+    }
+
+    .form input{
+        font-size: medium;
+        width: 90%;
+    }
+
+    .form button{
+        font-size: medium;
+        padding: 10px 20px;
+        margin-left: 35%;
+    }
+
+    .sub-first{
+        font-size: 18px;
+    }
+
+    .sub-second{
+        font-size: 15px;
+    }
+
+    .third-sec{
+        font-size: 20px;
+    }
+
+    .sub-fourth{
+        font-size: 18px;
+    }
+
+    .sub-fourth h5{
+        font-size: 14px;
+    }
+
+    .faq-header{
+        font-size: 12px;
+    }
+
+    .faq{
+        margin: 0;
+    }
+
+    .question{
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .faq-btn{
+        font-size: 40px;
+    }
+}

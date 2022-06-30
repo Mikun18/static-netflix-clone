@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './MediaQueries/loginpage.css'
 
 const Login = ({ setUser }) => {
   const navigate = useNavigate()

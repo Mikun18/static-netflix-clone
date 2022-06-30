@@ -3,10 +3,16 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
 import Add from './add'
+import './MediaQueries/addpage.css'
 
 const Browse = () => {
   const [add, setAdd] = useState(false);
   const [people, setPeople] = useState([]);
+
+  const removeItem = (name) => {
+    let newPeople = people.filter((person) => person.name !== name);
+      setPeople(newPeople);
+  }
 
   return (
     <div className='account'>
@@ -25,19 +31,10 @@ const Browse = () => {
             return(
               <div className='indi'>
                 <Link to='/netflix' className='person'>{name}</Link>
+                <button onClick={() => removeItem(name)}>Remove</button>
               </div>
             )
         })}
-
-         {/* <article className='act-con'>
-          <div className='who'>
-              <Link to='/netflix' className='makin'>Odumakinde</Link>
-              <Link to='/netflix' className='mide'>Ayomide</Link>
-              <Link to='/netflix' className='posi'>Ayomiposi</Link>
-              <Link to='/netflix' className='mikun'>Ayomikun</Link>
-              <Link to='/netflix' className='add'>+</Link>
-          </div>
-        </article> */}
     </div>
   )
 }

@@ -1,0 +1,45 @@
+@media(max-width: 1108px){
+    .container{
+        margin: 0 30%;
+    }
+}
+
+@media(max-width: 912px){
+    .container{
+        margin: 0 28%;
+    }
+}
+
+@media(max-width: 770px){
+    .container{
+        margin: 0 25%;
+    }
+}
+
+@media(max-width: 640px){
+    .container{
+        margin: 2% 20%;
+    }
+}
+
+@media(max-width: 415px){
+    .container{
+        margin: 0;
+    }
+
+    .login-main-header{
+        background-color: black;
+    }
+
+    .login-form{
+        padding: 5% 0;
+    }
+
+    .login-form input{
+        width: 90%;
+    }
+
+    .login-btn{
+        width: 91%;
+    }
+}

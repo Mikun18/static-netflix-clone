@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+import './MediaQueries/homepage.css'
 
 const Body = () => {
   return (
@@ -13,11 +14,11 @@ const Body = () => {
          </div>
 
         <div className='second-sec'>
-            <img src='./Images/mobile.jpg' />
             <div className='sub-second'>
                 <h2>Download your shows to watch offline</h2>
                 <h5>Save your favorites easily and always have something to watch.</h5>
             </div>
+            <img src='./Images/mobile.jpg' />
         </div>
 
         <div className='third-sec'>
@@ -26,11 +27,11 @@ const Body = () => {
         </div>
 
         <div className='fourth-sec'>
-            <img src='./Images/kids.png' />
             <div className='sub-fourth'>
                 <h2>Create profiles for kids</h2>
                 <h5>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h5>
             </div>
+            <img src='./Images/kids.png' />
         </div>
     </section>
   )

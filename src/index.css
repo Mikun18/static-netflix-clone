@@ -6,6 +6,7 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
 }
 
 .main-header{
@@ -80,69 +81,93 @@ body{
 .form button{
     border: none;
     color: white;
-    padding: 0px 35px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding: 23px 35px;
     background-color: red;
     font-size: xx-large;
 }
 
 .first-sec{
     display: flex;
-    padding-left: 100px;
+    align-items: center;
+    padding: 0 5%;
     justify-content: space-between;
     border-bottom: 8px #222 solid;
 }
 
+.first-sec img{
+    width: 50%;
+}
+
 .sub-first{
-    margin-top: 13%;
+    /* margin-top: 13%; */
+    /* max-width: 450px; */
     font-size: 30px;
-    width: 450px;
+    width: 40%;
 }
 
 .second-sec{
     display: flex;
-    padding-left: 100px;
+    align-items: center; 
+    flex-direction: row-reverse;
     justify-content: space-between;
+    /* padding-left: 100px; */
+    padding: 0 5%;
     border-bottom: 8px #222 solid;
 }
 
+.second-sec img{
+    width: 50%;
+}
+
 .sub-second{
-    margin-top: 13%;
+    /* margin-top: 13%; */
+    max-width: 450px;
     font-size: 30px;
-    width: 450px;
-    padding-right: 100px;
+    width: 60%;
+    /* padding-right: 100px; */
 }
 
 .third-sec{
     padding: 100px;
     font-size: 30px;
     border-bottom: 8px #222 solid;
+    /* max-width: 450px; */
 }
 
 .fourth-sec{
     display: flex;
-    padding-left: 100px;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* padding-left: 100px; */
+    padding: 0 5%;
     justify-content: space-between;
     border-bottom: 8px #222 solid;
 }
 
+.fourth-sec img{
+    width: 50%;
+}
+
+
 .sub-fourth{
-    margin-top: 13%;
+    /* margin-top: 13%; */
+    max-width: 450px;
     font-size: 30px;
-    width: 450px;
-    padding-right: 100px;
+    width: 60%;
+    /* padding-right: 100px; */
 }
 
 .faq{
-    padding: 5%;
-    margin-left: 20%;
+    padding: 1% 0;
+    margin: 0 25%;
 }
 
-.faq h1{
-    padding: 5%;
-    margin-left: -2%;
-    font-size: 40px;
+.faq-header{
+    /* padding: 5%;
+    margin-left: -2%; */
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
@@ -151,7 +176,7 @@ body{
     background-color: #303030;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 25%;
+    /* margin-right: 25%; */
     margin-bottom: 10px;
     padding: 10px 20px;
 }
@@ -169,6 +194,7 @@ body{
     font-weight: lighter;
     background-color: #303030;
     color: white;
+    cursor: pointer;
 }
 
 .sub{
@@ -205,8 +231,7 @@ body{
 }
 
 .container{
-    margin-left: 35%;
-    margin-right: 34%;
+    margin: 0 35%;
     padding-bottom: 10%;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
@@ -229,8 +254,8 @@ body{
 }
 
 .login-form input{
-    width: 80%;
-    margin-left: 25px;
+    width: 86%;
+    margin-left: 10px;
     padding: 12px;
     background-color: #303030;
     color: white;
@@ -252,9 +277,10 @@ body{
 .login-btn{
     border: none;
     border-radius: 0.5rem;
-    padding: 10px 122px;
+    padding: 12px;
+    width: 90%;
     margin-top: 3%;
-    margin-left: 9%;
+    margin-left: 5%;
     background-color: red;
     color: white;
     font-size: medium;
@@ -303,23 +329,25 @@ body{
 
 .who{
     margin-top: 8%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
 }
 
 .who h1{
     font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 .who button{
     border: none;
     background-color: black;
     margin-top: 3%;
-    margin-left: 15%;
+    margin-left: 45%;
     padding: 5px 40px;
     color: darkgray;
     font-size: larger;
     border: 1px darkgray solid;
+    cursor: pointer;
 }
 
 .who button:hover{
@@ -352,7 +380,8 @@ body{
 .add-name p{
     color: #666;
     letter-spacing: 0.1em;
-    margin-left: 25px;
+    /* margin-left: 25px; */
+    padding: 0 2%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -371,7 +400,7 @@ body{
     padding: 8px;
     background-color: darkgray;
     font-size: larger;
-    color: white;
+    color: black;
     border: none;
 }
 
@@ -406,23 +435,32 @@ body{
 }
 
 .indi{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     margin-top: 20px;
     align-items: center;
+    justify-content: space-between;
     margin-left: 18%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px darkgray solid;
+    margin: 3% 35%;
+}
+
+.indi button{
+    border: none;
+    color: darkgray;
+    background-color: transparent;
+    font-size: large;
+    padding: 0 20px;
+    cursor: pointer;
 }
 
 .person{
-    padding: 35px 15px;
+    padding: 20px 15px;
     text-decoration: none;
     font-size: x-large;
     font-weight: bolder;
     color: white;
-    background-color: blue;
     border-radius: 0.5rem;
-    margin-right: 5%;
 }
 
 
@@ -491,133 +529,3 @@ body{
 } */
 
 
-@media only screen and (max-width:1248px){
-    .first-sec img{
-        width: 400px;
-    }
-
-    .sub-first{
-        margin-top: 8%;
-    }
-    .second-sec img{
-        width: 400px;
-    }
-
-    .sub-second{
-        margin-top: 8%;
-    }
-    .fourth-sec img{
-        width: 400px;
-    }
-
-    .sub-fourth{
-        margin-top: 8%;
-    }
-
-    .faq h1{
-        font-size: 35px;
-        margin-left: 2%;
-    }
-
-    .question{
-        padding: 10px 20px;
-        margin-right: 14%;
-    }
-
-    .faq-input{
-        margin-left: 10%;
-    }
-}
-
-@media only screen and (max-width: 1108px){
-    .faq h1{
-        margin-left: 1%;
-    }
-
-    .question{
-        margin-right: 12%;
-    }
-
-    .form input{
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 912px){
-    .form button{
-        display: block;
-        margin-top: 3%;
-        margin-left: 37%;
-        padding: 15px 24px;
-
-    }
-
-    .form input{
-        width: 75%;
-        padding: 13px;
-    }
-
-    .form label{
-        font-size: larger;
-    }
-
-    .first-sec{
-        display: block;
-    }
-    .first-sec img{
-        margin-left: 18%;
-    }
-    
-    .sub-first{
-        width: 630px;
-    }
-    
-    .sub-first h2{
-        margin-left: 25%;
-        padding: 1%;
-    }
-
-    .sub-first h5{
-        font-size: 20px;
-        text-align: center;
-    }
-    .second-sec{
-        display: block;
-        transform: rotate(180deg);
-        border: none;
-        border-top: 8px #222 solid;
-    }
-    .second-sec img{
-        /* transform: rotate(180deg); */
-        margin-left: 18%;
-        width: 65%;
-    }
-    
-    .sub-second{
-        /* transform: rotate(180deg); */
-        width: 630px;
-        
-    }
-    
-    .sub-second h2{
-        margin-top: 5%;
-        text-align: center;
-        padding: 1%;
-        width: max-content;
-        font-size: larger;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .sub-second h5{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .faq{
-        margin-left: 10%;
-    }
-
-    .faq-input{
-        margin-left: 2%;
-    }
-}

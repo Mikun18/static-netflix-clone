@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Input from './input'
 import './index.css'
+import './MediaQueries/homepage.css'
 
 const Header = () => {
   return (

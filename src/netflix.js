@@ -4,6 +4,7 @@ import './index.css'
 import Body from './body'
 import Faq from './faq'
 import Input from './input'
+import './MediaQueries/homepage.css'
 
 const Netflix = () => {
   return (
